@@ -4,20 +4,27 @@ This notebook analyzes the bakery sales dataset. I cleaned the data by checking 
 
 ## Workflows  
 1.**EDA** : Clean the messy data, rename columns to fit the dataset, and build a chart for each product and tier.
+
 2.**Filtering** : Keep only the top-selling producets, create a monthly series from them, and save it as a new dataset file. 
+
 3.**Import** : Load the new dataset file into a seperate notebook for the forecasting task.
+
 4.**Pattern check** : Plot the sales as a time series to identify the pattern and decide which type of forecast model fits it. 
+
 5.**Model selection**: Compare the candidate models by thier error on a holdout set, training on the earlier months and testing on July to September 2022. 
     5.1 Seasonal Naive + Growth
     5.2 Fourier Regression 
-6. Result of the Model based on MSE
+
+6.**Model Result**: 
 ```
 |                          | MAE      | MAPE    |
 | :----------------------- | :------: | :-----: |
 | Seasonal Naive + Growth  | 2952.473 | 0.086 % |
 | Fourier Regression       | 7565.411 | 0.252 % |
 ```
+
 7. **Final Model** : Use Seasonal Naive + Growth, since it has the lowest error.
+
 8. **Forecast results** : 
 ```
 | Date     | Result    |
