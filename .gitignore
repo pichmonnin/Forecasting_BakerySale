@@ -1,0 +1,9 @@
+# QMD file 
+*.qmd
+src/*.qmd
+# Folder
+__pycache__/
+EDA_Bakert_files
+
+# Virtual Environment 
+.venv/
