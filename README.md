@@ -12,8 +12,10 @@ This notebook analyzes the bakery sales dataset. I cleaned the data by checking 
 4.**Pattern check** : Plot the sales as a time series to identify the pattern and decide which type of forecast model fits it. 
 
 5.**Model selection**: Compare the candidate models by thier error on a holdout set, training on the earlier months and testing on July to September 2022. 
-    5.1 Seasonal Naive + Growth
-    5.2 Fourier Regression 
+
+5.1 **Seasonal Naive + Growth**
+
+5.2 **Fourier Regression**
 
 6.**Model Result**: 
 ```
