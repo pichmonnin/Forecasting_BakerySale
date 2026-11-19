@@ -21,8 +21,8 @@ This notebook analyzes the bakery sales dataset. I cleaned the data by checking 
 ```
 |                          | MAE      | MAPE    |
 | :----------------------- | :------: | :-----: |
-| Seasonal Naive + Growth  | 2952.473 | 0.086 % |
-| Fourier Regression       | 7565.411 | 0.252 % |
+| Seasonal Naive + Growth  | 2952.473 | 8.6 %   |
+| Fourier Regression       | 7565.411 | 25.2 %  |
 ```
 
 7. **Final Model** : Use Seasonal Naive + Growth, since it has the lowest error.
